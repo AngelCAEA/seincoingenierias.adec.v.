@@ -115,14 +115,12 @@
                   <span class="visually-hidden">Next</span>
               </button>
             </div>
-
           </div>
           <div class="col mb-4">
             <div class="card">
               <img src="/img/projects/project2.jpeg" class="card-img-top" alt="...">
             </div>
           </div>
-
           <div class="col mb-4">
             <div class="card">
               <img src="/img/projects/project5.jpeg" class="card-img-top" alt="...">
