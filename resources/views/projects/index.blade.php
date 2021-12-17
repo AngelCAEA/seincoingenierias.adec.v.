@@ -3,27 +3,24 @@
 @section('title','Servicios')
 
 @section('content')
-<div class=" container  bg-primary text-white shadow rounded">
-    
-        <h1 class = "fw-bolder text-center p-2" > SERVICIOS </h1>
-
+<div class=" container text-dark mt-2">
+    <h1 class = "fw-bolder text-center p-2" > SERVICIOS </h1>
     <div class="row">
         <div class="col-3">
-            <p class="fs-5 fw-bold">INFRAESTRUCTURA</p>
-            <hr>
+            <p class="fs-5 fw-bold">INFRAESTRUCTURA </p>
             <ul class="list-group list-group-numbered">
-                <li class="list-group-item  fw-bold"> Infraestructura Urbana </li>
-                <li class="list-group-item  fw-bold"> Alumbrado Público </li>
-                <li class="list-group-item  fw-bold"> Obras Públicas </li>
-                <li class="list-group-item  fw-bold"> Sector electrico </li>
-                <li class="list-group-item  fw-bold"> Sector mecanico </li>
+                <li class="list-group-item list-group-item-info  fw-bold"> Infraestructura Urbana </li>
+                <li class="list-group-item list-group-item-info  fw-bold"> Alumbrado Público </li>
+                <li class="list-group-item list-group-item-info  fw-bold"> Obras Públicas </li>
+                <li class="list-group-item list-group-item-info  fw-bold"> Sector electrico </li>
+                <li class="list-group-item list-group-item-info  fw-bold"> Sector mecanico </li>
             </ul>
             <hr>
             <p class="fs-5 fw-bold">DESARROLLO SUSTENTABLE</p>
             <ul class="list-group list-group-numbered">
-                <li class="list-group-item fw-bold"> Abastecimiento de agua </li>
-                <li class="list-group-item fw-bold"> Plantas de energia solar </li>
-                <li class="list-group-item fw-bold"> Agricultura ecologica </li>
+                <li class="list-group-item list-group-item-info fw-bold"> Abastecimiento de agua </li>
+                <li class="list-group-item list-group-item-info fw-bold"> Sistema fotovoltaico </li>
+                <li class="list-group-item list-group-item-info fw-bold"> Agricultura ecologica </li>
             </ul>
         </div>
 
@@ -35,7 +32,7 @@
             <a href="{{ route('projects.index')}}" class="btn btn-dark mt-1">Regresar</a>
         </div>
         @else
-            <h2 class = "font-weight-bold text-center mb-0">Proyectos </h2>        
+            <h2 class = "font-weight-bold text-center">Proyectos </h2>        
         @endisset
     
             @auth
@@ -48,10 +45,10 @@
             @endauth
         </div>
         <hr>
-        <p class="fs-5 fst-italic">Contamos con los servicios para la realización de sus obras. Estos son los proyectos que se han realizado</p>
+        <p class="fs-5">Contamos con los servicios para la realización de sus obras. Estos son los proyectos que se han realizado</p>
         <div class="d-flex flex-wrap justify-content-between align-items-start">
             @forelse ($projects as $project)
-            <div class="card mb-3" style="width: 18rem;">
+            <div class="card text-center mb-3 shadow" style="width: 18rem;">
                      @if($project->img)
                      <img style="height : 250px; object-fit:cover"
                      src="/storage/{{ $project->img}}" 

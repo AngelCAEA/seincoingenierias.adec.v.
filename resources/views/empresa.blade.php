@@ -3,15 +3,14 @@
 @section('title','Empresa')
 
 @section('content')
-
-<div class="container">
-    <div class="card bg-dark text-white">
+<div class="container mx-auto">
+    <div class="card mt-2 mb-2 text-white">
         <img src="/img/empresa.jpg" class="card-img" alt="empresa">
             <div class="card-img-overlay shadow rounded">
                 <h1 class = "card-title fw-bolder text-center" >EMPRESA</h5>
                     <hr>
-                    <img src="/img/logotipo.png" alt="seincoingenieria" class="img-fluid mx-auto d-block mb-5" width="250">
-                        <h2 class="text-center fw-bolder">QUIENES SOMOS</h2>
+                    <img src="/img/logotipo.png" alt="seincoingenieria" class="img-fluid mx-auto d-block p-3" width="250">
+                    <h2 class="text-center fw-bolder">QUIENES SOMOS</h2>
                         <p class="lead  fst-italic">
                             Es una empresa dedicada a la industria de la construcción,
                             gestión y validación de proyectos. 

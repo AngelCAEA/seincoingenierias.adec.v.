@@ -3,7 +3,7 @@
 @section('title','Inicio')
 
 @section('content')
-<div class="container">
+<div class="mt-2">
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -63,9 +63,11 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+</div>
 
-  <div class="p-3 mt-4 bg-primary text-white shadow rounded">       
-        <h1 class="text-center">Proyectos</h1>
+  <div class="container">
+  <div class="p-3 mb-4 mt-4">       
+        <h1 class="text-center text-dark">Proyectos</h1>
         <hr>
         <div class="row row-cols-1 row-cols-md-2 text-dark">
           <div class="col mb-4">
