@@ -12,7 +12,7 @@
 <body>
 <div id="app" class="d-flex flex-column justify-content-between" style="height: 100vh;">
 <header>
-    <nav class="navbar navbar-light navbar-expand-lg bg-white shadow-sm">
+    <nav class="navbar navbar-light navbar-expand-lg bg-light shadow-sm rounded">
         <div class="container">
             <a class="navbar-brand p-2" href="{{ route('inicio')}}">
                 <img src="/img/logotipo.png" alt="seincoingenieria" width="130" height="75">

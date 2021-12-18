@@ -3,15 +3,13 @@
 @section('title','Empresa')
 
 @section('content')
-<div class="container mx-auto">
-    <div class="card mt-2 mb-2 text-white">
-        <img src="/img/empresa.jpg" class="card-img" alt="empresa">
-            <div class="card-img-overlay shadow rounded">
-                <h1 class = "card-title fw-bolder text-center" >EMPRESA</h5>
-                    <hr>
-                    <img src="/img/logotipo.png" alt="seincoingenieria" class="img-fluid mx-auto d-block p-3" width="250">
-                    <h2 class="text-center fw-bolder">QUIENES SOMOS</h2>
-                        <p class="lead  fst-italic">
+<div class="container">
+    <div class="mt-4 mb-4 shadow rounded text-white" style="background: transparent url('/img/empresa.jpg') no-repeat center center /cover">
+                    <h2 class="p-3 text-center fw-bolder">QUIENES SOMOS</h2>
+                    <div class="text-center">
+                        <img src="/img/logotipo.png" class="img-fluid" alt="seincoingenieria" height="100" width="200">
+                    </div>
+                        <p class="p-3 lead  fst-italic">
                             Es una empresa dedicada a la industria de la construcción,
                             gestión y validación de proyectos. 
                             Iniciando nuestros proyectos desde la selección de las mejores ubicaciones,
@@ -24,7 +22,7 @@
                         <div class="row">
                             <div class="col">
                             <h3 class="text-center fw-bolder">MISIÓN</h3>
-                            <p class="lead fst-italic">
+                            <p class="p-3 lead fst-italic">
                                 Ser la mejor opción en edificación del segmento habitacional, 
                                 comercial, industrial e institucional, con los mejores tiempos
                                 y costos del mercado, comprometidos con la calidad e inmersos
@@ -34,7 +32,7 @@
                             </div>
                             <div class="col">
                                 <h3 class="text-center">VALORES</h3>
-                                <p class="text-justify px-5" >
+                                <p class="text-justify" >
                                     <ul class="lead">
                                         <li >Compromiso</li>
                                         <li >Responsabilidad</li>
@@ -46,7 +44,6 @@
                                 </p> 
                             </div>
                         </div>
-            </div>
-    </div>
+    </div>                    
 </div>
 @endsection

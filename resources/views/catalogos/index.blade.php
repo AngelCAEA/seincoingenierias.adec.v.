@@ -4,33 +4,32 @@
 
 @section('content')
 
-<div class="container shadow rounded bg-primary text-white">
-    <h1 class="font-weight-bold text-center p-2">CATALOGO DE PRODUCTOS</h1>
-    <div class="d-flex justify-content-between align-items-center">
-    </div>
-    <p class="fs-5 text-center text-white">
+<div class="container">
+    <div class="p-4">
+    <h1 class="font-weight-bold text-center">CATALOGO DE PRODUCTOS</h1>
+    <h4 class="text-center">
         Para cualquier información de un producto en el catalogo comunicate al numero que aparece
-    </p>
+    </h4>
     <hr>
-    <div class="d-flex flex-wrap justify-content-between align-items-start">
-        @forelse($catalogos as $catalogo)
-            <div class="card mt-4 mb-4" style="width: 18rem;">
-                @if($catalogo->img)
-                <img style="height : 250px; object-fit:cover"
-                src="/storage/{{ $catalogo->img}}"
-                class="card-img-top"
-                alt="{{$catalogo->title}}">
-                @endif
-                <div class="card-body text-dark">
-                    <h5 class="card-title">
-                        {{ $catalogo->title}}
-                    </h5>
-                    <a class="btn btn-primary"
-                        href="{{ route('catalogos.show', $catalogo) }}"> Ver más...
-                    </a>
-                </div>
-            </div>
-        @empty
+        <div class="d-flex flex-wrap justify-content-between align-items-start">
+                @forelse($catalogos as $catalogo)
+                    <div class="card mt-4 mb-4 shadow" style="width: 18rem;">
+                        @if($catalogo->img)
+                            <img style="height : 250px; object-fit:cover"
+                            src="/storage/{{ $catalogo->img}}"
+                            class="card-img-top"
+                            alt="{{$catalogo->title}}">
+                        @endif
+                    <div class="card-body text-center">
+                        <h5 class="card-title">
+                            {{ $catalogo->title}}
+                        </h5>
+                        <a class="btn btn-outline-primary"
+                            href="{{ route('catalogos.show', $catalogo) }}"> Ver más...
+                        </a>
+                    </div>
+                    </div>
+                @empty
         <div class="card mb-4">
             <div class="card-body">
                <small class="text-danger"> No hay productos en el catalogo para mostrar </small> 
@@ -51,6 +50,7 @@
         </a>  
         </div>
         @endauth
+    </div>
 </div>
 
 @endsection

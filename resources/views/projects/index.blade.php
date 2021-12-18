@@ -29,7 +29,7 @@
         @isset($category)
         <div>
             <h2 class = "font-weight-bold text-center mb-0">{{ $category->name }}</h2>
-            <a href="{{ route('projects.index')}}" class="btn btn-dark mt-1">Regresar</a>
+            <a href="{{ route('projects.index')}}" class="btn btn-link mt-1"><-Regresar</a>
         </div>
         @else
             <h2 class = "font-weight-bold text-center">Proyectos </h2>        
@@ -62,7 +62,7 @@
                     <p class="card-subtitle"> {{ $project->created_at->format('d/m/Y')}}</p>
                     <p class="card-text text-truncate">{{ $project->description }}</p>
                     <div class="d-flex justify-content-between align-items-center">
-                        <a class="btn btn-primary"
+                        <a class="btn btn-outline-primary"
                         href="{{ route('projects.show', $project)}}"> Ver más...
                         </a>
                         @if ($project->category_id)
