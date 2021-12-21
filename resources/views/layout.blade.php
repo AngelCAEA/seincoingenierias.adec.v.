@@ -12,7 +12,8 @@
 <body>
 <div id="app" class="d-flex flex-column justify-content-between" style="height: 100vh;">
 <header>
-    <nav class="navbar navbar-light navbar-expand-lg bg-light shadow-sm rounded">
+    <div class="shadow-sm rounded">
+    <nav class="navbar navbar-light navbar-expand-lg bg-light">
         <div class="container">
             <a class="navbar-brand p-2" href="{{ route('inicio')}}">
                 <img src="/img/logotipo.png" alt="seincoingenieria" width="130" height="75">
@@ -88,6 +89,7 @@
             </ul>
            </div>
         </div>
+    </div>
     </nav>
     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
         @csrf
