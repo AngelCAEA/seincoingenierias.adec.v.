@@ -3,10 +3,10 @@
 @section('title','Servicios')
 
 @section('content')
-<div class=" container text-dark mt-2">
+<div class=" container text-dark">
     <h1 class = "fw-bolder text-center p-2" > SERVICIOS </h1>
     <div class="row">
-        <div class="col-3">
+        <div class="col-4">
             <p class="fs-5 fw-bold">INFRAESTRUCTURA </p>
             <ul class="list-group list-group-numbered">
                 <li class="list-group-item list-group-item-info  fw-bold"> Infraestructura Urbana </li>
@@ -24,7 +24,7 @@
             </ul>
         </div>
 
-        <div class="col mt-2 mb-2">
+        <div class="col-7 mt-2 mb-2">
         <div class="d-flex justify-content-between align-items-center">
         @isset($category)
         <div>
