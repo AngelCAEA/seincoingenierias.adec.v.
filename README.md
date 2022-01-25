@@ -1,4 +1,4 @@
-<p align="center"><a href="https://seincoingenierias-adec-v-uilov.ondigitalocean.app/" target="_blank"><img src="/img/logotipo.png" width="400"></a></p>
+<p align="center"><a href="https://seincoingenierias-adec-v-uilov.ondigitalocean.app/" target="_blank"><img src="https://seincoingenierias-adec-v-uilov.ondigitalocean.app/img/logotipo.png" width="400"></a></p>
 
 
 ## About SEINCO INGENIERIA S.A DE C.V.
